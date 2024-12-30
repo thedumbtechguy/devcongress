@@ -1,6 +1,7 @@
 DashboardPortal::Engine.routes.draw do
   root to: "dashboard#index"
 
+  register_resource ::UserProfile
   # register resources above.
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

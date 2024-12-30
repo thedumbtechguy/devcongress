@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_12_30_203259) do
+ActiveRecord::Schema[7.2].define(version: 2024_12_30_205742) do
   create_table "user_login_change_keys", force: :cascade do |t|
     t.string "key", null: false
     t.string "login", null: false
@@ -21,6 +21,16 @@ ActiveRecord::Schema[7.2].define(version: 2024_12_30_203259) do
     t.string "key", null: false
     t.datetime "deadline", null: false
     t.datetime "email_last_sent", default: -> { "CURRENT_TIMESTAMP" }, null: false
+  end
+
+  create_table "user_profiles", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.string "full_name", null: false
+    t.string "display_name", null: false
+    t.string "timezone", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_user_profiles_on_user_id", unique: true
   end
 
   create_table "user_remember_keys", force: :cascade do |t|
@@ -43,6 +53,7 @@ ActiveRecord::Schema[7.2].define(version: 2024_12_30_203259) do
 
   add_foreign_key "user_login_change_keys", "users", column: "id"
   add_foreign_key "user_password_reset_keys", "users", column: "id"
+  add_foreign_key "user_profiles", "users"
   add_foreign_key "user_remember_keys", "users", column: "id"
   add_foreign_key "user_verification_keys", "users", column: "id"
 end

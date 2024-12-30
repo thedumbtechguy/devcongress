@@ -21,6 +21,7 @@ class User < ResourceRecord
 
   # add has_one associations above.
 
+  has_one :user_profile
   # add has_many associations above.
 
   # add attachments above.
