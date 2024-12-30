@@ -63,3 +63,5 @@ gem "annotate", "~> 3.2", :group => :development
 gem "standard", ">= 1.35.1", :group => :development
 
 gem "letter_opener", "~> 1.10", :group => :development
+# Ensure all SQLite connections are properly configured
+gem "activerecord-enhancedsqlite3-adapter", "~> 0.8.0"
