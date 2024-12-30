@@ -73,3 +73,5 @@ gem "mission_control-jobs", "~> 0.3"
 gem "solid_cache", "~> 1.0"
 # Add Solid Cable for web sockets
 gem "solid_cable", "~> 3.0"
+# Add Solid Errors for error monitoring
+gem "solid_errors", "~> 0.5"
