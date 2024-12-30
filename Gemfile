@@ -77,3 +77,11 @@ gem "solid_cable", "~> 3.0"
 gem "solid_errors", "~> 0.5"
 
 gem "sitepress-rails", "~> 4.0"
+
+gem "bcrypt", "~> 3.1"
+
+gem "sequel-activerecord_connection", "~> 2.0"
+
+gem "tilt", "~> 2.5"
+
+gem "rodauth-rails", "~> 2.0"
