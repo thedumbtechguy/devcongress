@@ -226,9 +226,9 @@
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
 "@radioactive-labs/plutonium@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@radioactive-labs/plutonium/-/plutonium-0.3.0.tgz#25b05249067a8d86e1641b5a268ee656aae312fe"
-  integrity sha512-UE8sTSBJJ1yKEvVEZ/+PP4Sh4a5xVacXu0T6t7DthVdM5yCkDVs63dGi2PWsKyYawwBorm28FHU8KMAREmKXJQ==
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@radioactive-labs/plutonium/-/plutonium-0.3.1.tgz#6d5a98fab76991fa17573029ac2926913f750300"
+  integrity sha512-UcUiYPL9axtdh5bdH9X/u+DKCCD8oX820ZyJwyWG2LXdBKQtD1QyaxS2Ie8+GWWIcWoQV582WW5yHmjmCM/luQ==
   dependencies:
     "@hotwired/stimulus" "^3.2.2"
     "@hotwired/turbo" "^8.0.4"

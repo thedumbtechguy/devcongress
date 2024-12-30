@@ -119,14 +119,14 @@ GEM
     erubi (1.13.1)
     et-orbi (1.2.11)
       tzinfo
-    ffi (1.17.0-aarch64-linux-gnu)
-    ffi (1.17.0-aarch64-linux-musl)
-    ffi (1.17.0-arm-linux-gnu)
-    ffi (1.17.0-arm-linux-musl)
-    ffi (1.17.0-arm64-darwin)
-    ffi (1.17.0-x86_64-darwin)
-    ffi (1.17.0-x86_64-linux-gnu)
-    ffi (1.17.0-x86_64-linux-musl)
+    ffi (1.17.1-aarch64-linux-gnu)
+    ffi (1.17.1-aarch64-linux-musl)
+    ffi (1.17.1-arm-linux-gnu)
+    ffi (1.17.1-arm-linux-musl)
+    ffi (1.17.1-arm64-darwin)
+    ffi (1.17.1-x86_64-darwin)
+    ffi (1.17.1-x86_64-linux-gnu)
+    ffi (1.17.1-x86_64-linux-musl)
     fiber-local (1.1.0)
       fiber-storage
     fiber-storage (1.0.0)
@@ -255,7 +255,7 @@ GEM
       phlexi-display
       phlexi-field
       zeitwerk
-    plutonium (0.18.0)
+    plutonium (0.18.1)
       action_policy (~> 0.7.0)
       dry-initializer (~> 3.1)
       listen (~> 3.8)
