@@ -1,24 +1,53 @@
-# README
+# Rails Application Setup
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Prerequisites
 
-Things you may want to cover:
+- Ruby 3.3.5
+- Node.js & npm
+- Yarn
+- esbuild
 
-* Ruby version
+## Installation
 
-* System dependencies
+1. Clone the repository:
+```bash
+git clone https://github.com/thedumbtechguy/devcongress.git
+cd devcongress
+```
 
-* Configuration
+2. Install Ruby dependencies:
+```bash
+bundle install
+```
 
-* Database creation
+3. Install JavaScript dependencies:
+```bash
+yarn install
+```
 
-* Database initialization
+4. Set up the database:
+```bash
+bin/rails db:create db:migrate
+```
 
-* How to run the test suite
+## Running the Application
 
-* Services (job queues, cache servers, search engines, etc.)
+Start the development server:
+```bash
+bin/dev
+```
 
-* Deployment instructions
+The application should now be running at http://localhost:3000
 
-* ...
+## Troubleshooting
+
+If you encounter JavaScript compilation issues:
+```bash
+yarn build
+yarn build:css
+```
+
+For database issues:
+```bash
+bin/rails db:reset
+```
