@@ -136,6 +136,10 @@ GEM
       activesupport (>= 6.1)
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
+    importmap-rails (2.1.0)
+      actionpack (>= 6.0.0)
+      activesupport (>= 6.0.0)
+      railties (>= 6.0.0)
     io-console (0.8.0)
     irb (1.14.3)
       rdoc (>= 4.0.0)
@@ -170,6 +174,16 @@ GEM
     matrix (0.4.2)
     mini_mime (1.1.5)
     minitest (5.25.4)
+    mission_control-jobs (0.6.0)
+      actioncable (>= 7.1)
+      actionpack (>= 7.1)
+      activejob (>= 7.1)
+      activerecord (>= 7.1)
+      importmap-rails (>= 1.2.1)
+      irb (~> 1.13)
+      railties (>= 7.1)
+      stimulus-rails
+      turbo-rails
     msgpack (1.7.5)
     net-imap (0.5.4)
       date
@@ -349,6 +363,10 @@ GEM
     simple_form (5.3.1)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
+    solid_cache (1.0.6)
+      activejob (>= 7.2)
+      activerecord (>= 7.2)
+      railties (>= 7.2)
     solid_queue (0.9.0)
       activejob (>= 7.1)
       activerecord (>= 7.1)
@@ -440,11 +458,13 @@ DEPENDENCIES
   jbuilder
   jsbundling-rails
   letter_opener (~> 1.10)
+  mission_control-jobs (~> 0.3)
   plutonium
   propshaft
   puma (>= 5.0)
   rails (~> 7.2.2, >= 7.2.2.1)
   selenium-webdriver
+  solid_cache (~> 1.0)
   solid_queue (~> 0.9)
   sqlite3 (>= 1.4)
   standard (>= 1.35.1)

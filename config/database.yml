@@ -9,6 +9,11 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
+cache: &cache
+  <<: *default
+  migrations_paths: db/cache_migrate
+  database: storage/<%= Rails.env %>-cache.sqlite3
+
 queue: &queue
   <<: *default
   migrations_paths: db/queue_migrate
@@ -19,6 +24,7 @@ development:
     <<: *default
     database: storage/development.sqlite3
   queue: *queue
+  cache: *cache
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -28,6 +34,7 @@ test:
     <<: *default
     database: storage/test.sqlite3
   queue: *queue
+  cache: *cache
 
 
 # SQLite3 write its data on the local filesystem, as such it requires
@@ -41,3 +48,4 @@ production:
     <<: *default
     # database: path/to/persistent/storage/production.sqlite3
   queue: *queue
+  cache: *cache

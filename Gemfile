@@ -69,3 +69,5 @@ gem "activerecord-enhancedsqlite3-adapter", "~> 0.8.0"
 gem "solid_queue", "~> 0.9"
 # Add a web UI for Solid Queue
 gem "mission_control-jobs", "~> 0.3"
+# Add Solid Cache as an Active Support cache store
+gem "solid_cache", "~> 1.0"
