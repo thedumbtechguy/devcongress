@@ -61,3 +61,5 @@ gem "plutonium"
 gem "annotate", "~> 3.2", :group => :development
 
 gem "standard", ">= 1.35.1", :group => :development
+
+gem "letter_opener", "~> 1.10", :group => :development
