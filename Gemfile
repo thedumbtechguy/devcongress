@@ -71,3 +71,5 @@ gem "solid_queue", "~> 0.9"
 gem "mission_control-jobs", "~> 0.3"
 # Add Solid Cache as an Active Support cache store
 gem "solid_cache", "~> 1.0"
+# Add Solid Cable for web sockets
+gem "solid_cable", "~> 3.0"
