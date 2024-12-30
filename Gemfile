@@ -60,3 +60,5 @@ group :test do
   gem "selenium-webdriver"
 end
 gem "plutonium"
+
+gem "annotate", "~> 3.2", :group => :development
