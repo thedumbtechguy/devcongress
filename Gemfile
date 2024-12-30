@@ -30,7 +30,7 @@ gem "jbuilder"
 # gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: %i[ windows jruby ]
+gem "tzinfo-data", platforms: %i[windows jruby]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
@@ -40,7 +40,7 @@ gem "bootsnap", require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
+  gem "debug", platforms: %i[mri windows], require: "debug/prelude"
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
@@ -58,11 +58,11 @@ group :test do
 end
 gem "plutonium"
 
-gem "annotate", "~> 3.2", :group => :development
+gem "annotate", "~> 3.2", group: :development
 
-gem "standard", ">= 1.35.1", :group => :development
+gem "standard", ">= 1.35.1", group: :development
 
-gem "letter_opener", "~> 1.10", :group => :development
+gem "letter_opener", "~> 1.10", group: :development
 # Ensure all SQLite connections are properly configured
 gem "activerecord-enhancedsqlite3-adapter", "~> 0.8.0"
 # Add Solid Queue for background jobs
@@ -75,3 +75,5 @@ gem "solid_cache", "~> 1.0"
 gem "solid_cable", "~> 3.0"
 # Add Solid Errors for error monitoring
 gem "solid_errors", "~> 0.5"
+
+gem "sitepress-rails", "~> 4.0"
