@@ -115,7 +115,7 @@ GEM
       reline (>= 0.3.8)
     dotenv (3.1.7)
     drb (2.2.1)
-    dry-initializer (3.1.1)
+    dry-initializer (3.2.0)
     erubi (1.13.1)
     et-orbi (1.2.11)
       tzinfo
@@ -162,7 +162,7 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     logger (1.6.4)
-    loofah (2.23.1)
+    loofah (2.24.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     lru_redux (1.1.0)
@@ -255,7 +255,7 @@ GEM
       phlexi-display
       phlexi-field
       zeitwerk
-    plutonium (0.18.1)
+    plutonium (0.18.5)
       action_policy (~> 0.7.0)
       dry-initializer (~> 3.1)
       listen (~> 3.8)
